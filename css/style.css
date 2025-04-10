@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+h1{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 50px;
+ color: white;
+}
+
+span{
+color: rgb(228, 141, 255);
+font-weight: 20px;
+}
+
+p{
+font-size: medium;
+color: white;
+}
+
+.header{
+   
+}
