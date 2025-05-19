@@ -16,7 +16,10 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+color: white;
+  font-size: 40px;
+  margin-bottom: 40px;
+  word-spacing: normal;    background: Black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,4 +152,226 @@ h2 span{
 .about-txt p{
     font-size: 20px;
 }
+
+.skills-section {
+  background-color: rgb(21, 32, 37);
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.skills-title {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 40px;
+  word-spacing: normal;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.pic{
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainer #pic1,
+#slider1:target ~ .imgContainer #button1{
+    width: 250px;
+    height: 420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainer #pic2,
+#slider2:target ~ .imgContainer #button2{
+    width: 250px;
+    height:420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainer #pic3,
+#slider3:target ~ .imgContainer #button3{
+    width: 350px;
+    height: 420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainer #pic4,
+#slider4:target ~ .imgContainer #button4{
+    width: 250px;
+    height: 420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+#slider5:target ~ .imgContainer #pic5,
+#slider5:target ~ .imgContainer #button5{
+    width: 250px;
+    height:420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainer #pic6,
+#slider6:target ~ .imgContainer #button6{
+    width: 350px;
+    height: 420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainer #pic7,
+#slider7:target ~ .imgContainer #button7{
+    width: 250px;
+    height: 420px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider1:target ~ .imgContainer{
+    left: 40%;
+}
+#slider2:target ~ .imgContainer{
+    left: 30%;
+}
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+#slider4:target ~ .imgContainer{
+    left: -0;
+}
+#slider5:target ~ .imgContainer{
+    left: -20%;
+}
+#slider6:target ~ .imgContainer{
+    left: -30%;
+}
+#slider7:target ~ .imgContainer{
+    left: -40%;
+}
+
+.contact-info {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+  word-spacing: normal;
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.info-box {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  word-spacing: normal;
+  padding: 40px 25px;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.info-item span {
+  font-size: 24px;
+}
+
+.info-item h6 {
+  margin-bottom: 5px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #fff;
+  color: #000;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.h7 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
 
