@@ -123,32 +123,76 @@ h2 span{
   0 0 25px cyan;
 }
 
+
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
-  gap: 0.5rem; 
-  padding: 7rem 10%;
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
-.about-img img{
-   width: 350px;
-    box-shadow: 0 0 5px cyan,
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; 
+  box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 25px cyan;
-    border-radius: 180px;
+  transition: transform 0.4s ease;
 }
 
-.about-txt h4{
-    font-size: 40px;
+.about-img img:hover {
+  transform: scale(1.05);
 }
 
-.about-txt h4 span{
-    color: cyan;
+.about-txt {
+  flex: 1.2;
+  padding: 1rem;
 }
 
-.about-txt p{
-    font-size: 20px;
+.about-txt h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-txt h4 span {
+  color: cyan;
+}
+
+.about-txt p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-txt {
+    padding: 0;
+  }
 }
 
 .skills {
