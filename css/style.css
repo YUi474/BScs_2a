@@ -178,20 +178,34 @@ h2 span{
   text-align: justify;
 }
 
-
 @media (max-width: 768px) {
   .about {
     flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
     text-align: center;
   }
 
   .about-img img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
 
   .about-txt {
-    padding: 0;
+    max-width: 90%;
+    margin-top: 1.5rem;
+  }
+
+  .about-txt h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-txt p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    word-break: break-word;
   }
 }
 
