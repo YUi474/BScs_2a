@@ -45,6 +45,9 @@ body{
 
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   gap: 25px;
 }
 
@@ -107,6 +110,10 @@ h2 span{
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 25px cyan;
     border-radius: 180px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
 }
 
 .home-sci{
@@ -128,6 +135,7 @@ h2 span{
   justify-content: center;
   text-decoration: none;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 
 .home-sci a:hover {
